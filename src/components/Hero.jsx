@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button.jsx'
 import { Github, Linkedin, Mail, Phone, MapPin } from 'lucide-react'
 import { motion } from 'framer-motion'
+import profileImage from '../assets/profile.jpg'
 
 const Hero = () => {
   const scrollToSection = (sectionId) => {
@@ -25,13 +26,14 @@ const Hero = () => {
         >
           {/* Profile Image Placeholder */}
           <motion.div
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
-            transition={{ delay: 0.2, duration: 0.5 }}
-            className="w-32 h-32 mx-auto mb-8 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full flex items-center justify-center text-4xl font-bold"
-          >
-            BM
-          </motion.div>
+  initial={{ scale: 0 }}
+  animate={{ scale: 1 }}
+  transition={{ delay: 0.2, duration: 0.5 }}
+  className="w-48 h-48 mx-auto mb-8 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full flex items-center justify-center text-4xl font-bold"
+>
+  <img src={profileImage} alt="Profile" className="w-full h-full object-cover rounded-full" />
+</motion.div>
+
 
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
