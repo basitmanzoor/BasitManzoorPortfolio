@@ -5,18 +5,18 @@ const Skills = () => {
     {
       title: "Programming Languages",
       skills: [
-        { name: "JavaScript", level: 95 },
-        { name: "TypeScript", level: 90 },
-        { name: "Java (DSA)", level: 85 }
+        { name: "JavaScript", level: 90 },
+        { name: "TypeScript", level: 80 },
+        { name: "Java (DSA)", level: 70 }
       ]
     },
     {
       title: "Frontend Technologies",
       skills: [
-        { name: "React.js", level: 95 },
+        { name: "React.js", level: 75 },
         { name: "HTML5", level: 98 },
         { name: "CSS3", level: 95 },
-        { name: "Tailwind CSS", level: 90 }
+        { name: "Tailwind CSS", level: 80 }
       ]
     },
     {
@@ -24,8 +24,8 @@ const Skills = () => {
       skills: [
         { name: "Node.js", level: 95 },
         { name: "Express.js", level: 90 },
-        { name: "MongoDB", level: 88 },
-        { name: "SQL", level: 85 }
+        { name: "MongoDB", level: 90 },
+        { name: "SQL", level: 80 }
       ]
     },
     {
@@ -33,7 +33,7 @@ const Skills = () => {
       skills: [
         { name: "Git", level: 90 },
         { name: "GitHub", level: 90 },
-        { name: "WordPress", level: 88 },
+        { name: "WordPress", level: 98 },
         { name: "Kafka", level: 80 }
       ]
     }
@@ -110,26 +110,26 @@ const Skills = () => {
             Certifications & Achievements
           </h3>
           <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            <div className="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow duration-300">
+            <div className="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow duration-300"><a href='https://leetcode.com/basit1107'>
               <div className="w-16 h-16 bg-gradient-to-r from-green-400 to-blue-500 rounded-full mx-auto mb-4 flex items-center justify-center text-white text-2xl font-bold">
                 LC
               </div>
               <h4 className="text-lg font-semibold text-gray-900 mb-2">LeetCode 100+</h4>
-              <p className="text-gray-600">240+ coding problems solved</p>
+              <p className="text-gray-600">240+ coding problems solved</p></a>
             </div>
-            <div className="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow duration-300">
+            <div className="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow duration-300"><a href='https://www.freecodecamp.org/certification/basitmanzoor1107/javascript-algorithms-and-data-structures'>
               <div className="w-16 h-16 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full mx-auto mb-4 flex items-center justify-center text-white text-2xl font-bold">
                 JS
               </div>
               <h4 className="text-lg font-semibold text-gray-900 mb-2">JavaScript Algorithms</h4>
-              <p className="text-gray-600">Data Structures Certification</p>
+              <p className="text-gray-600">Data Structures Certification</p></a>
             </div>
-            <div className="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow duration-300">
+            <div className="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow duration-300"><a href='https://www.freecodecamp.org/certification/basitmanzoor1107/back-end-development-and-apis'>
               <div className="w-16 h-16 bg-gradient-to-r from-purple-400 to-pink-500 rounded-full mx-auto mb-4 flex items-center justify-center text-white text-2xl font-bold">
                 BE
               </div>
               <h4 className="text-lg font-semibold text-gray-900 mb-2">Backend Development</h4>
-              <p className="text-gray-600">APIs Certification</p>
+              <p className="text-gray-600">APIs Certification</p></a>
             </div>
           </div>
         </motion.div>

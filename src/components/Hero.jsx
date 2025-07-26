@@ -29,7 +29,7 @@ const Hero = () => {
   initial={{ scale: 0 }}
   animate={{ scale: 1 }}
   transition={{ delay: 0.2, duration: 0.5 }}
-  className="w-48 h-48 mx-auto mb-8 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full flex items-center justify-center text-4xl font-bold"
+  className="w-42 h-42 mx-auto mb-8 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full flex items-center justify-center text-4xl font-bold"
 >
   <img src={profileImage} alt="Profile" className="w-full h-full object-cover rounded-full" />
 </motion.div>
@@ -102,7 +102,7 @@ const Hero = () => {
               onClick={() => scrollToSection('contact')}
               variant="outline"
               size="lg"
-              className="border-purple-400 text-purple-300 hover:bg-purple-400 hover:text-white px-8 py-3 rounded-full transition-all duration-300"
+              className="border-purple-400 text-purple-900 hover:bg-purple-400 hover:text-white px-8 py-3 rounded-full transition-all duration-300"
             >
               Contact Me
             </Button>
@@ -136,7 +136,7 @@ const Hero = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 2, duration: 0.6 }}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+        className="absolute bottom-1 left-1/2 transform -translate-x-1/2"
       >
         <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
           <div className="w-1 h-3 bg-white/60 rounded-full mt-2 animate-bounce"></div>

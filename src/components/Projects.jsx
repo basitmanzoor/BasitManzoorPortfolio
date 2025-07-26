@@ -165,7 +165,7 @@ const Projects = () => {
                           </div>
                         </div>
 
-                        {/* Action Buttons */}
+                        {/* Action Buttons
                         <div className="flex gap-4">
                           <Button
                             variant="outline"
@@ -181,7 +181,7 @@ const Projects = () => {
                             <Github size={16} className="mr-2" />
                             Source Code
                           </Button>
-                        </div>
+                        </div> */}
                       </motion.div>
 
                       {/* Project Features */}

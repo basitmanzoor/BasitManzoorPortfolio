@@ -11,7 +11,7 @@ const Experience = () => {
       type: "Full-time",
       achievements: [
         "Actively contribute as part of the backend team for an ERP solution, following Agile methodology",
-        "Developed and maintained 12+ microservices using Node.js and TypeScript",
+        "Developed and maintained 6+ microservices using Node.js and TypeScript",
         "Implemented real-time communication between services with Kafka, improving response times by 40%",
         "Worked on API layer and database design, ensuring efficient data flow and optimized query performance",
         "Collaborated closely with frontend developers and QA teams for timely delivery of high-quality features",
@@ -151,7 +151,7 @@ const Experience = () => {
             </div>
             <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-xl shadow-lg">
               <h4 className="text-xl font-bold text-gray-900 mb-2">
-                Non-Medical Science Stream
+                12th - Non-Medical Science Stream
               </h4>
               <p className="text-blue-600 font-medium mb-2">
                 Tyndale Biscoe School
