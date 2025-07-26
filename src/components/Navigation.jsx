@@ -52,7 +52,7 @@ const Navigation = () => {
             className="text-2xl font-bold"
           >
             <span className={`${scrolled ? 'text-gray-900' : 'text-white'} transition-colors duration-300`}>
-              Basit
+              Basit Manzoor
             </span>
             <span className="text-purple-600">.</span>
           </motion.div>

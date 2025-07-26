@@ -114,13 +114,13 @@ const Hero = () => {
             className="flex justify-center gap-6"
           >
             <a
-              href="#"
+              href="https://github.com/basitmanzoor/"
               className="p-3 bg-white/10 rounded-full hover:bg-white/20 transition-all duration-300 transform hover:scale-110"
             >
               <Github size={24} />
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/basitmanzoor/"
               className="p-3 bg-white/10 rounded-full hover:bg-white/20 transition-all duration-300 transform hover:scale-110"
             >
               <Linkedin size={24} />

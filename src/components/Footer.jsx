@@ -8,13 +8,13 @@ const Footer = () => {
     {
       icon: <Github className="w-5 h-5" />,
       name: "GitHub",
-      url: "#",
+      url: "https://github.com/basitmanzoor/",
       color: "hover:text-gray-900"
     },
     {
       icon: <Linkedin className="w-5 h-5" />,
       name: "LinkedIn",
-      url: "#",
+      url: "https://www.linkedin.com/in/basitmanzoor/",
       color: "hover:text-blue-600"
     },
     {
@@ -57,7 +57,7 @@ const Footer = () => {
             className="md:col-span-2"
           >
             <div className="mb-4">
-              <span className="text-3xl font-bold text-white">Basit</span>
+              <span className="text-3xl font-bold text-white">Basit Manzoor</span>
               <span className="text-purple-400 text-3xl">.</span>
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed max-w-md">
