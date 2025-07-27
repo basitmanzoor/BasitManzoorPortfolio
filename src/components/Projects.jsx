@@ -248,11 +248,11 @@ const Projects = () => {
           className="mt-16 grid md:grid-cols-4 gap-6 max-w-4xl mx-auto"
         >
           <div className="text-center">
-            <div className="text-3xl font-bold text-purple-400 mb-2">12+</div>
+            <div className="text-3xl font-bold text-purple-400 mb-2">6+</div>
             <div className="text-gray-400">Microservices</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-pink-400 mb-2">10+</div>
+            <div className="text-3xl font-bold text-pink-400 mb-2">20+</div>
             <div className="text-gray-400">Client Websites</div>
           </div>
           <div className="text-center">

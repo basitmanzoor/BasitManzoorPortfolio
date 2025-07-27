@@ -10,6 +10,7 @@ const Contact = () => {
     subject: '',
     message: ''
   })
+  const [status, setStatus] = useState('') // 'success', 'error', or ''
 
   const handleChange = (e) => {
     setFormData({
@@ -18,12 +19,29 @@ const Contact = () => {
     })
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    // Handle form submission here
-    console.log('Form submitted:', formData)
-    // Reset form
-    setFormData({ name: '', email: '', subject: '', message: '' })
+    setStatus('sending')
+
+    try {
+      const response = await fetch('https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT', { // REPLACE THIS WITH YOUR ACTUAL FORMSPREE ENDPOINT
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+
+      if (response.ok) {
+        setStatus('success')
+        setFormData({ name: '', email: '', subject: '', message: '' })
+      } else {
+        setStatus('error')
+      }
+    } catch (error) {
+      console.error('Form submission error:', error)
+      setStatus('error')
+    }
   }
 
   const contactInfo = [
@@ -229,11 +247,17 @@ const Contact = () => {
                 </div>
                 <Button
                   type="submit"
+                  disabled={status === 'sending'}
                   className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white py-3 rounded-lg transition-all duration-300 transform hover:scale-105"
                 >
-                  <Send size={20} className="mr-2" />
-                  Send Message
+                  {status === 'sending' ? 'Sending...' : <><Send size={20} className="mr-2" /> Send Message</>}
                 </Button>
+                {status === 'success' && (
+                  <p className="text-green-600 text-center mt-4">Message sent successfully!</p>
+                )}
+                {status === 'error' && (
+                  <p className="text-red-600 text-center mt-4">Failed to send message. Please try again later.</p>
+                )}
               </form>
             </motion.div>
           </div>
@@ -269,4 +293,3 @@ const Contact = () => {
 }
 
 export default Contact
-
