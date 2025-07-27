@@ -281,7 +281,7 @@ const Contact = () => {
             <Button
               onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
               variant="outline"
-              className="border-white text-white hover:bg-white hover:text-purple-600"
+              className="border-white text-purple-800 hover:bg-purple-900 hover:text-white"
             >
               Start a Project
             </Button>
